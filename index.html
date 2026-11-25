@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateo Labour · Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="barra">
+        <a href="#inicio" class="logo">Mateo Labour</a>
+        <nav>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#proyectos">Proyectos</a>
+            <button id="btn-tema" type="button">Modo oscuro</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="presentacion">
+            <div class="avatar" aria-hidden="true">ML</div>
+            <h1>Mateo Labour</h1>
+            <p class="rol">Estudiante de Desarrollo de Software</p>
+        </section>
+
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>
+                Soy Mateo Labour y estudio Desarrollo de Software en una Escuela Técnica.
+                Me interesa crear páginas web simples y funcionales, que se enfoquen en lo importante.
+                En este portfolio muestro los trabajos que fui realizando durante el año.
+            </p>
+            <h3>Tecnologías favoritas</h3>
+            <ul class="tecnologias">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>APIs REST (fetch)</li>
+                <li>Git y GitHub</li>
+            </ul>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <div class="grid">
+
+                <article class="tarjeta">
+                    <h3>Catálogo de Videojuegos</h3>
+                    <p>Formulario para agregar videojuegos con nombre, categoría, precio, plataforma, imagen y fecha de lanzamiento. Se muestran como tarjetas en pantalla.</p>
+                    <p class="tags">HTML · CSS · JavaScript (DOM)</p>
+                    <a href="proyectos/catalogo-videojuegos/index.html">Ver proyecto</a>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>Dashboard Financiero Personal</h3>
+                    <p>Consulta las cotizaciones del dólar en tiempo real con una API, incluye un conversor de divisas y guarda la última cotización para usar sin conexión.</p>
+                    <p class="tags">HTML · CSS · JavaScript (fetch, localStorage)</p>
+                    <a href="proyectos/dashboard-financiero/index.html">Ver proyecto</a>
+                </article>
+
+                <article class="tarjeta destacada">
+                    <span class="etiqueta">Proyecto Final</span>
+                    <h3>Aulify</h3>
+                    <p>Plataforma web para encontrar profesores particulares: catálogo de clases, perfiles profesionales, reservas y registro con verificación de identidad. También se usa desde una app Android.</p>
+                    <p class="tags">HTML · Tailwind CSS · JavaScript · PHP · MySQL</p>
+                    <a href="https://aulify.com.ar" target="_blank" rel="noopener">Ver proyecto en aulify.com.ar</a>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>Creado por Mateo Labour</footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

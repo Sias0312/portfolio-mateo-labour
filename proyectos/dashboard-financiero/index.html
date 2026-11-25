@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Financiero Personal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Dashboard Financiero Personal</h1>
+
+    <div class="barra">
+        <span id="estado">Cargando cotizaciones...</span>
+        <button id="btn-consultar">Actualizar</button>
+    </div>
+
+    <h2>Cotizaciones</h2>
+    <div id="cotizaciones"></div>
+
+    <h2>Conversor de divisas</h2>
+    <form id="conversor" onsubmit="return false">
+        <label for="tipo-dolar">Tipo de cambio</label>
+        <select id="tipo-dolar"></select>
+        <p id="detalle-tipo" class="detalle"></p>
+
+        <label for="sentido">Conversión</label>
+        <select id="sentido">
+            <option value="ars-usd">Pesos a Dólares</option>
+            <option value="usd-ars">Dólares a Pesos</option>
+        </select>
+
+        <label for="monto" id="etiqueta-monto">Monto en pesos (ARS)</label>
+        <input type="number" id="monto" min="0" step="any" placeholder="0">
+
+        <div id="resultado" class="resultado">--</div>
+    </form>
+
+    <footer>Creado por Mateo Labour · Datos de dolarapi.com</footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

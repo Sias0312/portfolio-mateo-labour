@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Videojuegos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Catálogo de Videojuegos</h1>
+
+    <h2>Agregar Videojuego</h2>
+
+    <form id="formulario">
+        <label for="nombre">Nombre</label>
+        <input
+            type="text"
+            id="nombre"
+            placeholder="Nombre del videojuego">
+
+        <label for="categoria">Categoría</label>
+        <select id="categoria"></select>
+
+        <label for="precio">Precio</label>
+        <input
+            type="number"
+            id="precio"
+            min="0"
+            placeholder="Precio en $">
+
+        <label for="plataforma">Plataforma</label>
+        <select id="plataforma"></select>
+
+        <label for="imagen">Imagen (URL)</label>
+        <input
+            type="url"
+            id="imagen"
+            placeholder="https://...">
+
+        <label for="fecha">Fecha de lanzamiento</label>
+        <input
+            type="date"
+            id="fecha">
+
+        <button type="button" id="agregar">
+            Agregar
+        </button>
+    </form>
+
+    <div id="catalogo"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>

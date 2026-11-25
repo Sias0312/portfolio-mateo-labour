@@ -1,0 +1,164 @@
+/* Estilo sobrio: fondo gris oscuro y un solo color de acento */
+:root {
+    --fondo: #1c1f26;
+    --panel: #262a33;
+    --borde: #3a3f4b;
+    --texto: #e6e8ec;
+    --suave: #9aa1ae;
+    --acento: #4f9d7a;
+    --error: #d9776b;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 2.5rem 1rem;
+    background: var(--fondo);
+    color: var(--texto);
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    line-height: 1.5;
+}
+
+h1 {
+    margin: 0 0 1.5rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h2 {
+    max-width: 1000px;
+    margin: 2.5rem auto 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--suave);
+}
+
+.barra {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0.8rem 1rem;
+    background: var(--panel);
+    border: 1px solid var(--borde);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: var(--suave);
+}
+
+.barra .error {
+    color: var(--error);
+}
+
+#estado.error {
+    color: var(--error);
+}
+
+button {
+    padding: 0.6rem 1.2rem;
+    background: var(--acento);
+    color: #fff;
+    font-size: 0.95rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+    background: #438a6a;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#cotizaciones {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.25rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tarjeta {
+    padding: 1rem;
+    background: var(--panel);
+    border: 1px solid var(--borde);
+    border-radius: 8px;
+}
+
+.tarjeta h3 {
+    margin: 0 0 0.6rem;
+    font-size: 1.1rem;
+}
+
+.tarjeta p {
+    margin: 0.2rem 0;
+    font-size: 0.95rem;
+}
+
+.detalle {
+    font-size: 0.8rem;
+    color: var(--suave);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background: var(--panel);
+    border: 1px solid var(--borde);
+    border-radius: 8px;
+}
+
+label {
+    margin-top: 0.6rem;
+    font-size: 0.85rem;
+    color: var(--suave);
+}
+
+input,
+select {
+    padding: 0.55rem 0.7rem;
+    background: var(--fondo);
+    color: var(--texto);
+    border: 1px solid var(--borde);
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: var(--acento);
+}
+
+.resultado {
+    margin-top: 1.2rem;
+    padding: 0.9rem;
+    background: var(--fondo);
+    border: 1px solid var(--borde);
+    border-radius: 6px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--acento);
+}
+
+footer {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--suave);
+}
